@@ -58,7 +58,7 @@ flutter:
   # the material Icons class.
   uses-material-design: true
   assets:
-    - /home/laptop/AndroidStudioProjects/assets/
+    - /home/laptop/AndroidStudioProjects/george_colley_flutter/george_colley_flutter/assets/
 
 
 

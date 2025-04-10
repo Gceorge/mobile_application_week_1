@@ -53,7 +53,7 @@ void main() {
                     child: Container(
                       margin: EdgeInsets.fromLTRB(0, 60, 35, 20),
                       height: 120,
-                      alignment: Alignment.bottomLeft,
+                      alignment: Alignment.bottomRight,
                       color: Colors.black,
                       child: Text(
                         "TAMK",
@@ -88,7 +88,7 @@ void main() {
                     child: Container(
                       margin: EdgeInsets.fromLTRB(35, 60, 0, 20),
                       height: 120,
-                      alignment: Alignment.bottomRight,
+                      alignment: Alignment.bottomLeft,
                       color: Colors.grey,
                       child: Text(
                         "THWS",
