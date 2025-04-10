@@ -35,24 +35,28 @@ void main() {
                     border: Border.all(color: Colors.black, width: 4),
                   ),
                   child: Center(
+                    child: FittedBox(
+                      fit: BoxFit.scaleDown, //added for containing text
                     child: Text(
                       "Welcome",
                       style: TextStyle(fontSize: 40, color: Colors.white),
                     ),
                   ),
                 ),
+                ),
               ),
             ),
             SizedBox(height: 20),
+            Spacer(),
             Container(
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  // Left box
-                  Expanded(
+                  // LEFT BOX
+                  SizedBox(
+                    width: 120,
                     child: Container(
-                      margin: EdgeInsets.fromLTRB(0, 60, 35, 20),
-                      height: 120,
+                      height: 140,
                       alignment: Alignment.bottomRight,
                       color: Colors.black,
                       child: Text(
@@ -65,12 +69,12 @@ void main() {
                       ),
                     ),
                   ),
+                  Spacer(),
 
                   // Middle Box
                   Container(
-                    margin: EdgeInsets.fromLTRB(10, 60, 10, 20),
                     width: 120,
-                    height: 250,
+                    height: 300,
                     color: Colors.grey[800],
                     alignment: Alignment.center,
                     child: Text(
@@ -82,12 +86,12 @@ void main() {
                       ),
                     ),
                   ),
-
-                  // Right Box
-                  Expanded(
+                  Spacer(),
+                  // RIGHT BOX
+                  SizedBox(
+                    width: 120,
                     child: Container(
-                      margin: EdgeInsets.fromLTRB(35, 60, 0, 20),
-                      height: 120,
+                      height: 140,
                       alignment: Alignment.bottomLeft,
                       color: Colors.grey,
                       child: Text(
